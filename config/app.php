@@ -178,7 +178,6 @@ return [
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ViewComposerServiceProvider::class,
-        Musonza\Chat\ChatServiceProvider::class,
         LikeableServiceProvider::class,
     ],
 
@@ -231,7 +230,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'Chat' => Musonza\Chat\Facades\ChatFacade::class,
     ],
 
 ];

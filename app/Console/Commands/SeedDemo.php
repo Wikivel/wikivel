@@ -43,5 +43,7 @@ class SeedDemo extends Command
 
             $this->info('Application is now ready for demonstration purposes!');
         }
+
+        return 1;
     }
 }

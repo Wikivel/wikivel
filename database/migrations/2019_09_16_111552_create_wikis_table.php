@@ -21,8 +21,9 @@ class CreateWikisTable extends Migration
             $table->string('slug');
 
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
             $table->softDeletes();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

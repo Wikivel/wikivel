@@ -22,9 +22,10 @@ class CreateSpacesTable extends Migration
             $table->string('slug');
 
             $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('wiki_id')->references('id')->on('wikis');
-            $table->softDeletes();
         });
     }
 

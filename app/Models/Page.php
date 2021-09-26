@@ -10,7 +10,7 @@ use Spatie\Searchable\Searchable;
 use Spatie\Searchable\SearchResult;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Activitylog\Traits\LogsActivity;
-use Artisanry\Commentable\Traits\HasComments;
+use App\Models\Traits\HasComments;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Page extends Model implements Searchable
