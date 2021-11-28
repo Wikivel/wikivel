@@ -5,7 +5,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name') ?? 'LaraWiki' }} | @yield('title')</title>
+    <title>{{ config('app.name') ?? 'Wikivel' }} | @yield('title')</title>
 
     <!-- Assets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"

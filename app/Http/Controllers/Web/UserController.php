@@ -23,7 +23,7 @@ class UserController extends Controller
     public function edit(UserService $userService, $id)
     {
         $user = $userService->getById($id);
-        
+
         if (!$user) {
             Log::alert(
                 sprintf(
