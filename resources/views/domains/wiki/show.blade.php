@@ -20,7 +20,7 @@
                 @endforeach
             </div>
             <div class="w-2/12 h-full text-right">
-                <form class="flex-2" method="POST" action="{{ route('wiki.delete', ['wiki' => $wiki]) }}">
+                <form class="flex" method="POST" action="{{ route('wiki.delete', ['wiki' => $wiki]) }}">
                     @csrf
 
                     <a class="px-1 py-1 hover:text-green-600 hover:no-underline favorite__toggle" title="Toggle Favorite">

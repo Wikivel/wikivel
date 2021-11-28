@@ -23,6 +23,7 @@ return [
         [
             'email' => 'superadmin@wiki.app',
             'name' => 'Super Admin',
+            'username' => 'superadmin',
             'password' => 'password',
             'display_picture' => null,
             'roles' => ['super_admin', 'admin', 'user'],
@@ -30,6 +31,7 @@ return [
         [
             'email' => 'michael@consil.co.uk',
             'name' => 'Michael Stokoe',
+            'username' => 'michaels',
             'password' => 'consilpass1',
             'display_picture' => null,
             'roles' => ['admin', 'user'],

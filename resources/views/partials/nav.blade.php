@@ -1,4 +1,4 @@
-<nav class="bg-blue-900 shadow mb-0 py-6 md:mb-8">
+<nav class="bg-blue-900 shadow mb-0 py-6 px-2 md:mb-8">
     <div class="container mx-auto px-6 md:px-0">
         <div class="flex items-center justify-center">
             <div class="mr-6">

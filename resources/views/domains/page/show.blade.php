@@ -21,7 +21,7 @@
                 @endforeach
             </div>
             <div class="w-2/12 h-full text-right">
-                <form class="flex-2" method="POST" action="{{ route('page.delete', ['page' => $page]) }}">
+                <form class="flex" method="POST" action="{{ route('page.delete', ['page' => $page]) }}">
                     @csrf
 
                     <a class="px-1 py-1 hover:text-green-600 hover:no-underline favorite__toggle"
@@ -35,12 +35,12 @@
                         @endif
                     </a>
 
-                    <a class="px-1 hover:text-yellow-600 hover:no-underline"
+                    <a class="px-1 py-1 hover:text-yellow-600 hover:no-underline"
                         href="{{ route('page.edit', ['page' => $page]) }}">
                         <i class="fas fa-edit"></i>
                     </a>
 
-                    <button id="delete_item_button" class="px-1 text-blue-600 hover:text-red-600">
+                    <button id="delete_item_button" class="px-1 py-1 text-blue-600 hover:text-red-600">
                         <i class="far fa-trash-alt"></i>
                     </button>
                 </form>

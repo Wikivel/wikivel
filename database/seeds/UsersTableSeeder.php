@@ -17,15 +17,17 @@ class UsersTableSeeder extends Seeder
         foreach ($users as $user) {
             $name = $user['name'];
             $email = $user['email'];
+            $username = $user['username'];
             $password = $user['password'];
             $roles = $user['roles'];
             $picture = $user['display_picture'];
 
             $newUser = User::firstOrNew(
                 [
-                    'name' => $name,
+                    'username' => $username,
                 ],
                 [
+                    'username' => $username,
                     'name' => $name,
                     'email' => $email,
                     'password' => Hash::make($password),
